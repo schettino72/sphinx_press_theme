@@ -1,12 +1,8 @@
 <template>
 <header class="navbar">
+  <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
   <slot></slot>
-    <!-- <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/> -->
 
-    <!-- <router-link -->
-    <!--   :to="$localePath" -->
-    <!--   class="home-link" -->
-    <!-- > -->
     <!--   <img -->
     <!--     class="logo" -->
     <!--     v-if="$site.themeConfig.logo" -->
@@ -32,13 +28,13 @@
 </template>
 
 <script>
-// import SidebarButton from './SidebarButton.vue'
+import SidebarButton from './vuepress/SidebarButton.vue'
 // import AlgoliaSearchBox from '@AlgoliaSearchBox'
 // import SearchBox from './SearchBox.vue'
 // import NavLinks from './NavLinks.vue'
 
 export default {
-//   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
+  components: { SidebarButton }, // NavLinks, SearchBox, AlgoliaSearchBox },
 
 //   computed: {
 //     algolia () {

@@ -1,8 +1,8 @@
 <navbar>
-  {# TODO: sidebar-button #}
-  <a href="/" class="home-link">
-    <span class="site-name">XXXX</span>
-  </a>
+  <router-link to="{{pathto(master_doc)}}" class="home-link">
+    <span class="site-name">{{ project|e }}</span>
+  </router-link>
+
   <div class="links">
     {# FIXME:vue component #}
     <div class="search-box">

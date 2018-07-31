@@ -1,9 +1,12 @@
 import Vue from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+
+import './vuepress/styles/theme.styl'
+import Navbar from './Navbar.vue'
+
 
 Vue.config.productionTip = false
 
-Vue.component('hello', HelloWorld)
+Vue.component('navbar', Navbar)
 
 new Vue({el: '#app'})
 

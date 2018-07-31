@@ -1,0 +1,1 @@
+../../ui/dist/js/chunk-vendors.js

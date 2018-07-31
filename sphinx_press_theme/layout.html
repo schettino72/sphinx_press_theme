@@ -25,50 +25,12 @@
       <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
     {%- endif %}
 
-
-    {%- block linktags %}
-      {%- if hasdoc('about') %}
-        <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
-      {%- endif %}
-      {%- if hasdoc('genindex') %}
-        <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
-      {%- endif %}
-      {%- if hasdoc('search') %}
-        <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
-      {%- endif %}
-      {%- if hasdoc('copyright') %}
-        <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
-      {%- endif %}
-      {%- if next %}
-        <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
-      {%- endif %}
-      {%- if prev %}
-        <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
-      {%- endif %}
-    {%- endblock %}
+    {%- block linktags %}{%- include "linktags.html" %}{%- endblock %}
     {%- block extrahead %} {% endblock %}
   </head>
 
   <body><div id="app">
-    {%- block header %}
-      <navbar>
-        {# TODO: sidebar-button #}
-        <a href="/" class="home-link">
-          <span class="site-name">XXXX</span>
-        </a>
-        <div class="links">
-          {# FIXME:vue component #}
-          <div class="search-box">
-            <input aria-label="Search" autocomplete="off" spellcheck="false" value>
-          </div>
-          <nav class="nav-links can-hide">
-            <div class="nav-item">
-              <a href="/guide/" class="nav-link router-link-active">Guide</a>
-            </div>
-          </nav>
-        </div>
-      </navbar>
-    {% endblock %}
+    {%- block header %}{%- include "navbar.html" %}{% endblock %}
 
     {%- block content %}
       <div class="document">
@@ -85,28 +47,10 @@
           {%- endif %}
         </div>
       {%- endblock %}
-
-      <div class="clearer"></div>
     </div>
   {%- endblock %}
 
-  {%- block footer %}
-    <div class="footer" role="contentinfo">
-      {%- if show_copyright %}
-        {%- if hasdoc('copyright') %}
-          {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
-        {%- else %}
-          {% trans copyright=copyright|e %}&#169; Copyright {{ copyright }}.{% endtrans %}
-        {%- endif %}
-      {%- endif %}
-      {%- if last_updated %}
-        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-      {%- endif %}
-      {%- if show_sphinx %}
-        {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-      {%- endif %}
-    </div>
-  {%- endblock %}
+  {%- block footer %}{%- include "footer.html" %}{%- endblock %}
   </div></body>
 </html>
 

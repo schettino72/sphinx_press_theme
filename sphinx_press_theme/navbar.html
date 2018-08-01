@@ -1,17 +1,9 @@
-<navbar>
+<navbar @toggle-sidebar="toggleSidebar">
   <router-link to="{{pathto(master_doc)}}" class="home-link">
     <span class="site-name">{{ project|e }}</span>
   </router-link>
 
   <div class="links">
-    {# FIXME:vue component #}
-    <div class="search-box">
-      <input aria-label="Search" autocomplete="off" spellcheck="false" value>
-    </div>
-    <nav class="nav-links can-hide">
-      <div class="nav-item">
-        <a href="/guide/" class="nav-link router-link-active">Guide</a>
-      </div>
-    </nav>
+    {%- include "navlinks.html" %}
   </div>
 </navbar>

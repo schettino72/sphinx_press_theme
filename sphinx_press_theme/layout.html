@@ -29,8 +29,19 @@
     {%- block extrahead %} {% endblock %}
   </head>
 
-  <body><div id="app">
+  <body><div id="app" class="theme-container" :class="pageClasses">
     {%- block header %}{%- include "navbar.html" %}{% endblock %}
+
+    {# close sidebar when clicked out of it #}
+    <div class="sidebar-mask"
+         @click="toggleSidebar(false)"
+         >
+    </div>
+
+    <sidebar @toggle-sidebar="toggleSidebar">
+      {%- include "navlinks.html" %}
+    </sidebar>
+
 
     {%- block content %}
       <div class="document">

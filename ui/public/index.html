@@ -12,12 +12,31 @@
       <strong>We're sorry but ui doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
 
-    <div id="app">
-      <navbar>
+    <div id="app" class="theme-container" :class="pageClasses">
+      <navbar @toggle-sidebar="toggleSidebar">
         <router-link to='/' class="home-link">
           <span class="site-name">Foo</span>
         </router-link>
+        <div class="links">
+          <navlinks class="can-hide">
+            xxx
+          </navlinks>
+        </div>
       </navbar>
+
+      <div
+        class="sidebar-mask"
+        @click="toggleSidebar(false)"
+        ></div>
+
+      <sidebar
+        @toggle-sidebar="toggleSidebar"
+        >
+        <navlinks>
+          xxx
+        </navlinks>
+      </sidebar>
+
     </div>
     <!-- built files will be auto injected -->
   </body>

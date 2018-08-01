@@ -10,6 +10,14 @@ Welcome to sphinx_press_theme's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   about
+
+.. toctree::
+   :caption: Demo
+
+   theme-demo/basic
+   theme-demo/admonition
+
 
 
 Indices and tables

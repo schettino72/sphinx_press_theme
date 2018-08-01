@@ -30,38 +30,29 @@
   </head>
 
   <body><div id="app" class="theme-container" :class="pageClasses">
-    {%- block header %}{%- include "navbar.html" %}{% endblock %}
-
-    {# close sidebar when clicked out of it #}
-    <div class="sidebar-mask"
-         @click="toggleSidebar(false)"
-         >
-    </div>
-
-    <sidebar @toggle-sidebar="toggleSidebar">
-      {%- include "navlinks.html" %}
-    </sidebar>
-
-
     {%- block content %}
-      <div class="document">
-        {%- block document %}
-        <div class="documentwrapper">
-          {%- if render_sidebar %}
-            <div class="bodywrapper">
-          {%- endif %}
-          <div class="body" role="main">
-            {% block body %} {% endblock %}
-          </div>
-          {%- if render_sidebar %}
-            </div>
-          {%- endif %}
-        </div>
-      {%- endblock %}
-    </div>
-  {%- endblock %}
+      {%- block header %}{%- include "navbar.html" %}{% endblock %}
 
-  {%- block footer %}{%- include "footer.html" %}{%- endblock %}
+      {# close sidebar when clicked out of it #}
+      <div class="sidebar-mask"
+           @click="toggleSidebar(false)"
+           >
+      </div>
+
+      <sidebar @toggle-sidebar="toggleSidebar">
+        {%- include "navlinks.html" %}
+      </sidebar>
+
+      <page> {# :sidebar-items="sidebarItems"> #}
+        {%- block document %}
+          <div class="content">
+            {% block body %} {% endblock %}
+            {%- block footer %}{%- include "footer.html" %}{%- endblock %}
+          </div>
+        {%- endblock %}
+      </page>
+
+    {%- endblock content %}
   </div></body>
 </html>
 

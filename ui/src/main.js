@@ -4,6 +4,7 @@ import './vuepress/styles/theme.styl'
 import Navbar from './Navbar.vue'
 import NavLinks from './NavLinks.vue'
 import Sidebar from './Sidebar.vue'
+import Page from './Page.vue'
 
 
 Vue.config.productionTip = false
@@ -11,6 +12,7 @@ Vue.config.productionTip = false
 Vue.component('navbar', Navbar)
 Vue.component('navlinks', NavLinks)
 Vue.component('sidebar', Sidebar)
+Vue.component('page', Page)
 
 
 // fake router element

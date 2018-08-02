@@ -23,3 +23,16 @@ $anchorHeight = ($navbarHeight + 0.5rem)
   & a:focus
     // remove outline because padding mess it up
     outline none
+
+
+h1, h2, h3, h4, h5, h6
+  &:hover a.headerlink
+    &::after
+      visibility visible
+      content "#"
+
+a.headerlink
+  font-size 0.85em
+  visibility hidden
+  &:hover
+    text-decoration none

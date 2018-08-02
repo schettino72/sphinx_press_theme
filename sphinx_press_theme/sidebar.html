@@ -1,5 +1,7 @@
-<div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-  <div class="sphinxsidebarwrapper">
+<div class="sidebar-links" role="navigation" aria-label="main navigation">
+  {# should be one sidebar-group per toctree directvie,
+     but not way to separate from sphinx output #}
+  <div class="sidebar-group">
     {%- for sidebartemplate in sidebars %}
       {%- include sidebartemplate %}
     {%- endfor %}

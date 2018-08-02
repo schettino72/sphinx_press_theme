@@ -112,6 +112,17 @@ function resolveOpenGroupIndex (route, items) {
     .sidebar-links
       padding 1rem 0
 
+/********************/
+
+/* rename some classes as no control on what comes from sphinx:
+  - sidebar-heading => caption
+  - sidebar-link => reference
+  - sidebar-sub-headers => toctree-l2
+    Note: sidebar-sub-headers refers to ul in Vuepress
+          while toctree-l2 referes to li in sphinx
+  - active => current
+*/
+
 /**** SidebarGroup.vue  ***/
 .sidebar-group
   &:not(.first)
@@ -119,11 +130,11 @@ function resolveOpenGroupIndex (route, items) {
   .sidebar-group
     padding-left 0.5em
   &:not(.collapsable)
-    .sidebar-heading
+    .caption
       cursor auto
       color inherit
 
-.sidebar-heading
+.caption
   color #999
   transition color .15s ease
   cursor pointer
@@ -142,18 +153,23 @@ function resolveOpenGroupIndex (route, items) {
   &:.open .arrow
     top -0.18em
 
-.sidebar-group-items
+.sidebar-group-items /* FIXME sphinx toc equivalent */
   transition height .1s ease-out
   overflow hidden
 
 /**** end: SidebarGroup.vue  ***/
 
 /**** SidebarLink.vue  ***/
-.sidebar .sidebar-sub-headers
+/*.sidebar .sidebar-sub-headers*/
+.sidebar .toctree-l1 ul
   padding-left 1rem
   font-size 0.95em
 
-a.sidebar-link
+/* extra indication of current, since no support to hight current location */
+.toctree-l1.current > ul
+   border-left: .2rem solid #6fd9a7
+
+a.reference
   font-weight 400
   display inline-block
   color $textColor
@@ -164,17 +180,17 @@ a.sidebar-link
   box-sizing: border-box
   &:hover
     color $accentColor
-  &.active
+  &.current
     font-weight 600
     color $accentColor
     border-left-color $accentColor
   .sidebar-group &
     padding-left 2rem
-  .sidebar-sub-headers &
+  .toctree-l2 &
     padding-top 0.25rem
     padding-bottom 0.25rem
     border-left none
-    &.active
+    &.current
       font-weight 500
 
 /**** end: SidebarLink.vue  ***/

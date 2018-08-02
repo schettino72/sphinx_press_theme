@@ -8,7 +8,7 @@ Welcome to sphinx_press_theme's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
    about
 

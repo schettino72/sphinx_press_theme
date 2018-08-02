@@ -30,29 +30,29 @@
   </head>
 
   <body><div id="app" class="theme-container" :class="pageClasses">
-    {%- block content %}
+    {%- block container %}
       {%- block header %}{%- include "navbar.html" %}{% endblock %}
 
       {# close sidebar when clicked out of it #}
-      <div class="sidebar-mask"
-           @click="toggleSidebar(false)"
-           >
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
       </div>
 
       <sidebar @toggle-sidebar="toggleSidebar">
         {%- include "navlinks.html" %}
+        {%- include "sidebar.html" %}
       </sidebar>
 
-      <page> {# :sidebar-items="sidebarItems"> #}
+
+      <page>
         {%- block document %}
           <div class="content">
             {% block body %} {% endblock %}
-            {%- block footer %}{%- include "footer.html" %}{%- endblock %}
           </div>
+          {%- block footer %}{%- include "footer.html" %}{%- endblock %}
         {%- endblock %}
       </page>
 
-    {%- endblock content %}
+    {%- endblock container %}
   </div></body>
 </html>
 

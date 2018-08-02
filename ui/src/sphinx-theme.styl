@@ -1,0 +1,25 @@
+@require './vuepress/styles/config'
+
+/* fix anchor link positioning */
+$anchorHeight = ($navbarHeight + 0.5rem)
+
+.content .section
+  margin-top -($anchorHeight)
+  padding-top $anchorHeight
+  margin-bottom 0
+  &:first-child
+    margin-top -1.5rem
+    margin-bottom 1rem
+    + p, + pre, + .custom-block
+      margin-top 2rem
+  &:hover
+    .headerlink
+        opacity: 1
+
+.content
+  .reference, .footnote-reference, .citation, .footnote
+    margin-top -($anchorHeight)
+    padding-top $anchorHeight
+  & a:focus
+    // remove outline because padding mess it up
+    outline none

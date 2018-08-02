@@ -169,7 +169,7 @@ function resolveOpenGroupIndex (route, items) {
 .toctree-l1.current > ul
    border-left: .2rem solid #6fd9a7
 
-a.reference
+.sidebar a.reference
   font-weight 400
   display inline-block
   color $textColor

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 
 import './vuepress/styles/theme.styl'
+import './sphinx-theme.styl'
 import Navbar from './Navbar.vue'
 import NavLinks from './NavLinks.vue'
 import Sidebar from './Sidebar.vue'

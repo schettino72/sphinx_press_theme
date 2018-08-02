@@ -54,7 +54,7 @@ export default {
 .navbar
   padding 0.7rem 1.5rem
   line-height $navbarHeight - 1.4rem
-  position relative
+  position fixed // relative
   a, span, img
     display inline-block
   .logo

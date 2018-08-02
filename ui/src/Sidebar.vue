@@ -111,4 +111,73 @@ function resolveOpenGroupIndex (route, items) {
         top calc(1rem - 2px)
     .sidebar-links
       padding 1rem 0
+
+/**** SidebarGroup.vue  ***/
+.sidebar-group
+  &:not(.first)
+    margin-top 1em
+  .sidebar-group
+    padding-left 0.5em
+  &:not(.collapsable)
+    .sidebar-heading
+      cursor auto
+      color inherit
+
+.sidebar-heading
+  color #999
+  transition color .15s ease
+  cursor pointer
+  font-size 1.1em
+  font-weight bold
+  // text-transform uppercase
+  padding 0 1.5rem
+  margin-top 0
+  margin-bottom 0.5rem
+  &.open, &:hover
+    color inherit
+  .arrow
+    position relative
+    top -0.12em
+    left 0.5em
+  &:.open .arrow
+    top -0.18em
+
+.sidebar-group-items
+  transition height .1s ease-out
+  overflow hidden
+
+/**** end: SidebarGroup.vue  ***/
+
+/**** SidebarLink.vue  ***/
+.sidebar .sidebar-sub-headers
+  padding-left 1rem
+  font-size 0.95em
+
+a.sidebar-link
+  font-weight 400
+  display inline-block
+  color $textColor
+  border-left 0.25rem solid transparent
+  padding 0.35rem 1rem 0.35rem 1.25rem
+  line-height 1.4
+  width: 100%
+  box-sizing: border-box
+  &:hover
+    color $accentColor
+  &.active
+    font-weight 600
+    color $accentColor
+    border-left-color $accentColor
+  .sidebar-group &
+    padding-left 2rem
+  .sidebar-sub-headers &
+    padding-top 0.25rem
+    padding-bottom 0.25rem
+    border-left none
+    &.active
+      font-weight 500
+
+/**** end: SidebarLink.vue  ***/
+
+
 </style>

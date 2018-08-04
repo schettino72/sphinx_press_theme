@@ -13,6 +13,7 @@ Welcome to sphinx_press_theme's documentation!
    about
 
 .. toctree::
+   :maxdepth: 2
    :caption: Demo
 
    theme-demo/basic

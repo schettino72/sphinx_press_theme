@@ -167,13 +167,13 @@ function resolveOpenGroupIndex (route, items) {
 
 /* extra indication of current, since no support to hight current location */
 .toctree-l1.current > ul
-   border-left: .2rem solid #6fd9a7
+   border-left: .5rem solid lighten($accentColor, 40%)
 
 .sidebar a.reference
   font-weight 400
   display inline-block
   color $textColor
-  border-left 0.25rem solid transparent
+  border-left 0.5rem solid transparent
   padding 0.35rem 1rem 0.35rem 1.25rem
   line-height 1.4
   width: 100%

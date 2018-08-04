@@ -47,10 +47,15 @@
         {%- block document %}
           <div class="content">
             {% block body %} {% endblock %}
-            {%- block footer %}
-              {%- include "util/footer.html" %}
-            {%- endblock %}
           </div>
+          {%- block footer %}
+            <div class="page-nav">
+              <div class="inner">
+                {%- include "util/pagenav.html" %}
+                {%- include "util/footer.html" %}
+              </div>
+            </div>
+          {%- endblock footer %}
         {%- endblock %}
       </page>
 

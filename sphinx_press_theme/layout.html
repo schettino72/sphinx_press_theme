@@ -47,8 +47,10 @@
         {%- block document %}
           <div class="content">
             {% block body %} {% endblock %}
+            {%- block footer %}
+              {%- include "util/footer.html" %}
+            {%- endblock %}
           </div>
-          {%- block footer %}{%- include "util/footer.html" %}{%- endblock %}
         {%- endblock %}
       </page>
 

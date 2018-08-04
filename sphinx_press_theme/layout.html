@@ -25,21 +25,21 @@
       <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
     {%- endif %}
 
-    {%- block linktags %}{%- include "linktags.html" %}{%- endblock %}
+    {%- include "util/linktags.html" %}
     {%- block extrahead %} {% endblock %}
   </head>
 
   <body><div id="app" class="theme-container" :class="pageClasses">
     {%- block container %}
-      {%- block header %}{%- include "navbar.html" %}{% endblock %}
+      {%- block header %}{%- include "util/navbar.html" %}{% endblock %}
 
       {# close sidebar when clicked out of it #}
       <div class="sidebar-mask" @click="toggleSidebar(false)">
       </div>
 
       <sidebar @toggle-sidebar="toggleSidebar">
-        {%- include "navlinks.html" %}
-        {%- include "sidebar.html" %}
+        {%- include "util/navlinks.html" %}
+        {%- include "util/sidebar.html" %}
       </sidebar>
 
 
@@ -48,7 +48,7 @@
           <div class="content">
             {% block body %} {% endblock %}
           </div>
-          {%- block footer %}{%- include "footer.html" %}{%- endblock %}
+          {%- block footer %}{%- include "util/footer.html" %}{%- endblock %}
         {%- endblock %}
       </page>
 

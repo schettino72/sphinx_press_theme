@@ -1,5 +1,10 @@
 <navlinks class="can-hide">
-  <div class="nav-item">
-    <a href="/guide/" class="nav-link router-link-active">Guide</a>
-  </div>
+  {% for tree in toctree_data %}
+    <div class="nav-item">
+      <a href="{{ pathto(tree.entries[0].name) }}"
+         class="nav-link {% if tree.current %} router-link-active{% endif %}">
+         {{tree.title}}
+      </a>
+    </div>
+  {% endfor %}
 </navlinks>

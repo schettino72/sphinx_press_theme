@@ -49,14 +49,14 @@
           <div class="content">
             {% block body %} {% endblock %}
           </div>
-          {%- block footer %}
-            <div class="page-nav">
-              <div class="inner">
+          <div class="page-nav">
+            <div class="inner">
+              {%- block footer %}
                 {%- include "util/pagenav.html" %}
                 {%- include "util/footer.html" %}
-              </div>
+              {%- endblock footer %}
             </div>
-          {%- endblock footer %}
+          </div>
         {%- endblock %}
       </page>
 

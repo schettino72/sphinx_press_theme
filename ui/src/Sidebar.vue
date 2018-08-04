@@ -134,7 +134,7 @@ function resolveOpenGroupIndex (route, items) {
       cursor auto
       color inherit
 
-.caption
+.sidebar-group .caption
   color #999
   transition color .15s ease
   cursor pointer

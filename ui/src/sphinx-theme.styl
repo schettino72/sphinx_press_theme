@@ -40,6 +40,18 @@ a.headerlink
     text-decoration none
 
 
+
+/** index page **/
+.toctree-wrapper .caption
+  // same as h2
+  font-weight 600
+  line-height 1.25
+  font-size 1.65rem
+  padding-bottom .3rem
+  border-bottom 1px solid $borderColor
+
+
+
 /** footer **/
 .footer
   min-height 2rem
@@ -48,6 +60,15 @@ a.headerlink
   color grey
   font-size small
   line-height 1.5rem
+
+
+/** pygments style **/
+.content .highlight
+  border-radius 6px
+
+// force background color from pygments
+.content .highlight pre
+  background-color inherit
 
 
 /*** admonitions based on custom-blocks.styl */

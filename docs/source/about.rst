@@ -2,30 +2,42 @@
 About
 =====
 
-A modern responsive theme for python's `Sphinx docs <https://www.youtube.com/watch?v=JmN9rkVfsmo>`_.
+Sphinx Press is a modern responsive theme for python's
+`Sphinx docs <http://www.sphinx-doc.org>`_.
 
-Javascript/CSS using Vue.js + Stylus managed by vue-cli-3 (webpack).
+This theme is based on `VuePress <https://vuepress.vuejs.org/>`_.
+It uses `Vue.js <https://vuejs.org/>`_ &
+`Stylus <http://stylus-lang.com/>`_ managed by
+`webpack <https://webpack.js.org/>`_
+(through `vue-cli <https://cli.vuejs.org/>`_).
 
 
 
-lala
-====
+Usage
+=====
 
-Do you have to repeatedly call complex command like this?
+
+First install the theme:
 
 .. code-block:: console
 
-    $ aws s3 sync _built/html s3://buck/et --exclude "*" --include "*.html"
+   $ pip install sphinx_press_theme
 
 
-Wrap it into `dodo.py` file:
+On Sphinx project's ``conf.py``: set the theme name to ``press``.
 
 .. code-block:: python
 
-    def task_publish():
-      """Publish to AWS S3"""
-      return {
-        "actions": [
-            'aws s3 sync _built/html s3://buck/et --exclude "*" --include "*.html"'
-        ]
-      }
+   html_theme = "press"
+
+
+See details on `Sphinx theming docs <http://www.sphinx-doc.org/en/master/theming.html#using-a-theme>`_.
+
+
+Status
+======
+
+**Press** theme is still in **ALFA**, some core Sphinx features
+still not available.
+
+Contributions are welcome.

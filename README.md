@@ -21,7 +21,3 @@ Install theme locally with `pip install -e .`.
 cd docs
 make clean; make html
 ```
-
-
-toctree in jinja2
-https://github.com/sphinx-doc/sphinx/issues/1679

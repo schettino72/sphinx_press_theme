@@ -47,7 +47,9 @@
               {%- include "util/extlinks.html" %}
             {% endblock %}
           </navlinks>
-          {%- include "util/sidebar.html" %}
+          {%- for sidebartemplate in sidebars %}
+            {%- include sidebartemplate %}
+          {%- endfor %}
         </sidebar>
       {%- endblock %}
 

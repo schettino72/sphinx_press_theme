@@ -11,6 +11,7 @@ sphinx_press_theme's documentation
    :caption: Docs
 
    about
+   configuration
 
 .. toctree::
    :maxdepth: 2

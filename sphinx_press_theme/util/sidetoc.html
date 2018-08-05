@@ -1,5 +1,10 @@
-{{ toctree(maxdepth=2,
+<div class="sidebar-links" role="navigation" aria-label="main navigation">
+  {# should be one sidebar-group per toctree directvie,
+     but not way to separate from sphinx output #}
+  <div class="sidebar-group">
+    {{ toctree(maxdepth=2,
            collapse=true,
            includehidden=true,
            titles_only=false) }}
-
+  </div>
+</div>

@@ -11,6 +11,23 @@ It uses [Vue.js](https://vuejs.org/) & [Stylus](http://stylus-lang.com/) managed
 **Press** theme is still in **ALFA**, some core Sphinx features still not available.
 Contributions are welcome.
 
+## Usage
+
+First install the theme:
+
+```
+$ pip install sphinx_press_theme
+```
+
+On Sphinx project's ``conf.py``: set the theme name to ``press``.
+
+```
+html_theme = "press"
+```
+
+See details on [Sphinx theming docs](http://www.sphinx-doc.org/en/master/theming.html#using-a-theme).
+
+
 ## Development
 
 First build web assets:

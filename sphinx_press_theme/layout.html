@@ -38,11 +38,18 @@
       <div class="sidebar-mask" @click="toggleSidebar(false)">
       </div>
 
-      <sidebar @toggle-sidebar="toggleSidebar">
-        {%- include "util/navlinks.html" %}
-        {%- include "util/sidebar.html" %}
-      </sidebar>
-
+      {%- block sidebar %}
+        <sidebar @toggle-sidebar="toggleSidebar">
+          {# sidebar navlinks displayed only on mobile #}
+          <navlinks>
+            {% block side_links %}
+              {%- include "util/navlinks.html" %}
+              {%- include "util/extlinks.html" %}
+            {% endblock %}
+          </navlinks>
+          {%- include "util/sidebar.html" %}
+        </sidebar>
+      {%- endblock %}
 
       <page>
         {%- block document %}
@@ -63,4 +70,3 @@
     {%- endblock container %}
   </div></body>
 </html>
-

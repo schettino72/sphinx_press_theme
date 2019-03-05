@@ -19,6 +19,7 @@ sphinx_press_theme's documentation
 
    theme-demo/basic
    theme-demo/admonition
+   theme-demo/domain
 
 
 

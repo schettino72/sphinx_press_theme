@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='sphinx_press_theme',
-    version='0.1.1',
+    version='0.2.0',
     url='https://schettino72.github.io/sphinx_press_site/',
     license='MIT',
     author='Eduardo Naufel Schettino <schetino72>',

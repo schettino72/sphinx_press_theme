@@ -46,3 +46,12 @@ Install theme locally with `pip install -e .`.
 cd docs
 make clean; make html
 ```
+
+
+## Website
+
+To update website:
+
+cd ../press_site
+rsync -rvi ../sphinx_vuepress_theme/docs/build/html/ .
+git add --all

@@ -100,6 +100,12 @@ function resolveOpenGroupIndex (route, items) {
       line-height 1.25rem
       font-size 1.1em
       padding 0.5rem 0 0.5rem 1.5rem
+  .searchbox
+    font-weight 600
+    font-size 1.1em
+    line-height 1.5rem
+    padding 1rem 0 1.5rem 1.5rem
+    border-bottom 1px solid $borderColor
   .sidebar-links
     padding 1.5rem 0
 

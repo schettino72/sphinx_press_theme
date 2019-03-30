@@ -1,5 +1,5 @@
-<div id="searchbox" role="search">
-  <h3>{{ _('Quick search') }}</h3>
+<div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">{{ _('Quick search') }}</span>
     <div class="searchformwrapper">
       <form class="search" action="{{ pathto('search') }}" method="get">
         <input type="text" name="q" />
@@ -8,4 +8,5 @@
         <input type="hidden" name="area" value="default" />
       </form>
     </div>
+  </div>
 </div>

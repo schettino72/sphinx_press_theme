@@ -62,6 +62,9 @@
 
       <page>
         {%- block document %}
+          {% block body_header %}
+            {%- include "util/bodyheader.html" %}
+          {%- endblock body_header %}
           <div class="content" role="main">
             {% block body %} {% endblock %}
           </div>

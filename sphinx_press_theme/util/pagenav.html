@@ -1,13 +1,14 @@
+<ul class="page-nav">
 {%- if prev %}
-  <span class="prev">
+  <li class="prev">
     <a href="{{ prev.link|e }}"
        title="{{ _('previous chapter') }}">← {{ prev.title }}</a>
-  </span>
+  </li>
 {%- endif %}
 {%- if next %}
-  <span class="next">
+  <li class="next">
     <a href="{{ next.link|e }}"
        title="{{ _('next chapter') }}">{{ next.title }} →</a>
-  </span>
+  </li>
 {%- endif %}
-
+</ul>

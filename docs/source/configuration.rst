@@ -59,6 +59,7 @@ Blocks on HTML body:
 
 * ``document``
 
+  - ``body_header`` - includes ``util/bodyheader.html``
   - ``body`` - main content generated from ReST documents
   - ``footer`` - includes ``util/pagenav.html`` & ``util/footer.html``
 
@@ -88,6 +89,11 @@ External links defined by theme's user.
 
 Navigation from toctree.
 
+
+``util/bodyheader.html``
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Breadcrumbs and page navigation.
 
 ``util/pagenav.html``
 ^^^^^^^^^^^^^^^^^^^^^

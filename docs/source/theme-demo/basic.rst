@@ -3,6 +3,8 @@ Basic Specification
 
 Paragraphs contain text and may contain inline markup: *emphasis*, **strong emphasis**, `interpreted text`, ``inline literals``, standalone hyperlinks (http://www.python.org), external hyperlinks (Python_), internal cross-references (example_), footnote references ([1]_), citation references ([CIT2002]_), substitution references (|example|), and _`inline internal targets`.
 
+.. |example| replace:: foo **bar**
+
 
 List
 -------
@@ -95,10 +97,13 @@ Citation
 .. [CIT2002] Just like a footnote, except the label is
    textual.
 
-.. _Python: http://www.python.org
 
-.. |example| function:: module=xml.xslt class=Processor
+Internal reference
+------------------
 
 .. _example:
 
 The "_example" target above points to this paragraph.
+
+
+.. _Python: http://www.python.org

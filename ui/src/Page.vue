@@ -202,6 +202,7 @@ function find (page, items, offset) {
 @require './vuepress/styles/wrapper.styl'
 
 .page
+  padding-top $navbarHeight
   padding-bottom 2rem
 
 .page-edit

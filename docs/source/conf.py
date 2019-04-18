@@ -96,14 +96,11 @@ html_static_path = ['_static']
 # to template names.
 #
 # The default sidebars (for documents that don't match any pattern) are
-# defined by theme itself.  Builtin themes are using these templates by
-# default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
-# 'searchbox.html']``.
+# defined by theme itself.  
 #
-html_sidebars = {'**': [
-    'util/searchbox.html',
-    'util/sidetoc.html'
-    ]}
+# The default `html_sidebars` of Press theme: ['util/searchbox.html', 'util/sidetoc.html']
+#
+html_sidebars = {'**': ['util/sidetoc.html']}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------

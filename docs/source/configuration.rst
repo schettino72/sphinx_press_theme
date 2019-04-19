@@ -16,16 +16,25 @@ Jinja2 templates and blocks are organized as follow:
 Config values
 =============
 
+``html_logo``
+^^^^^^^^^^^^^
+
+If defined shows an image instead of project name on page top-left (link to index page).
+
+.. code-block:: python
+
+   html_logo = '_static/myproject-logo.png'
+
 
 ``html_sidebars``
 ^^^^^^^^^^^^^^^^^
 
-By default the *sidebars* include only a global TOC tree.
+By default the *sidebars* include only: searchbox and a global TOC tree.
 See docs on `html_sidebars <http://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars>`_.
 
 .. code-block:: python
 
-  html_sidebars = {'**': ['util/sidetoc.html']}
+  html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
 
 
 
@@ -83,6 +92,11 @@ Links taken from TOCs defined on master document.
 
 External links defined by theme's user.
 
+
+``util/searchbox.html``
+^^^^^^^^^^^^^^^^^^^^^
+
+Form to perform site search.
 
 ``util/sidetoc.html``
 ^^^^^^^^^^^^^^^^^^^^^

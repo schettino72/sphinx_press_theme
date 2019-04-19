@@ -96,11 +96,11 @@ html_static_path = ['_static']
 # to template names.
 #
 # The default sidebars (for documents that don't match any pattern) are
-# defined by theme itself.  
+# defined by theme itself.
 #
 # The default `html_sidebars` of Press theme: ['util/searchbox.html', 'util/sidetoc.html']
 #
-html_sidebars = {'**': ['util/sidetoc.html']}
+# html_sidebars = {'**': ['util/sidetoc.html']}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------

@@ -94,7 +94,7 @@ External links defined by theme's user.
 
 
 ``util/searchbox.html``
-^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Form to perform site search.
 

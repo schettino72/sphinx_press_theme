@@ -7,6 +7,7 @@
 - support showing logo
 - add breadcrumbs
 - add page navigation on page top
+- fix #12: load extensions JS files
 
 
 0.2.0 (*2019-03-19*)

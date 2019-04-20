@@ -17,10 +17,11 @@
       {# FIXME: use link-preload #}
       <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
 
+      <!-- sphinx script_files -->
       {%- for scriptfile in script_files %}
         {{ js_tag(scriptfile) }}
       {%- endfor %}
-      
+
       {# press js #}
       <script src="{{ pathto('_static/theme-vendors.js', 1)}}"></script>
       <script src="{{ pathto('_static/theme.js', 1)}}" defer></script>

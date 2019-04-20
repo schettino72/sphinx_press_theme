@@ -13,14 +13,11 @@ sphinx_press_theme
    about
    configuration
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Demo
 
-   theme-demo/basic
-   theme-demo/admonition
-   theme-demo/domain
+   theme-demo/index
 
 
 

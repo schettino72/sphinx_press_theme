@@ -168,36 +168,33 @@ function resolveOpenGroupIndex (route, items) {
 /**** SidebarLink.vue  ***/
 /*.sidebar .sidebar-sub-headers*/
 .sidebar .toctree-l1 ul
-  padding-left 1rem
   font-size 0.95em
 
-/* extra indication of current, since no support to hight current location */
-.toctree-l1.current > ul
-   border-left: .5rem solid lighten($accentColor, 40%)
-
-.sidebar a.reference
-  font-weight 400
-  display inline-block
-  color $textColor
-  border-left 0.5rem solid transparent
-  padding 0.35rem 1rem 0.35rem 1.25rem
-  line-height 1.4
-  width: 100%
-  box-sizing: border-box
-  &:hover
-    color $accentColor
-  &.current
-    font-weight 600
-    color $accentColor
-    border-left-color $accentColor
-  .sidebar-group &
-    padding-left 2rem
-  .toctree-l2 &
-    padding-top 0.25rem
-    padding-bottom 0.25rem
-    border-left none
+.sidebar
+  .toctree-l1 a, .toctree-l2 a
+    font-weight 400
+    display inline-block
+    color $textColor
+    line-height 1.4
+    width: 100%
+    box-sizing: border-box
+    border-left 0.5rem solid transparent
     &.current
-      font-weight 500
+      color $accentColor
+      font-weight 600
+    &:hover
+      color $accentColor
+
+  // /* extra indication of current, since no support to hight current location */
+  .toctree-l1.current a
+    border-left: .5rem solid lighten($accentColor, 40%)
+  .toctree-l1 a
+    padding 0.35rem 1rem 0.35rem 1.25rem
+    &.current
+      border-left-color $accentColor
+  .toctree-l2 a
+    padding 0.25rem 1rem 0.25rem 1.75rem
+
 
 /**** end: SidebarLink.vue  ***/
 

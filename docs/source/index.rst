@@ -12,6 +12,8 @@ sphinx_press_theme
 
    about
    configuration
+   who
+   changes
 
 .. toctree::
    :maxdepth: 2

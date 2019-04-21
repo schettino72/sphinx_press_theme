@@ -55,9 +55,11 @@
               {%- include "util/extlinks.html" %}
             {% endblock %}
           </navlinks>
-          {%- for sidebartemplate in sidebars %}
-            {%- include sidebartemplate %}
-          {%- endfor %}
+          {%- if sidebars != None %}
+            {%- for sidebartemplate in sidebars %}
+              {%- include sidebartemplate %}
+            {%- endfor %}
+          {%- endif %}
         </sidebar>
       {%- endblock %}
 

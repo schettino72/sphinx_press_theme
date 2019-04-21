@@ -1,10 +1,12 @@
 {# create one link per each toctree from master_doc #}
-{% for tree in toctree_data %}
-  <div class="nav-item">
-    <a href="{{ pathto(tree.entries[0].name) }}"
-       class="nav-link {% if tree.current %} router-link-active{% endif %}">
-       {{tree.title}}
-    </a>
-  </div>
-{% endfor %}
+{% if toctree_data|length > 1 %}
+  {% for tree in toctree_data %}
+    <div class="nav-item">
+      <a href="{{ pathto(tree.docname) + tree.anchor }}"
+         class="nav-link {% if tree.current %} router-link-active{% endif %}">
+         {{tree.title}}
+      </a>
+    </div>
+  {% endfor %}
+{% endif %}
 

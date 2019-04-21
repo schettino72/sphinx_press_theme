@@ -86,7 +86,10 @@ def add_doctree_data(app, pagename, templatename, context, doctree):
         title = tree['caption']
         if not title:
             title = app.env.titles[tree['parent']].astext()
+
         res.append({
+            'docname': tree['parent'],
+            'anchor': '#{}'.format(tree.parent.parent['ids'][0]),
             'title': title,
             'current': current0,
             'entries': entries,

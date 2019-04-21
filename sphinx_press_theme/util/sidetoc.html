@@ -2,7 +2,7 @@
   {% for toc in toctree_data %}
     <div class="sidebar-group">
       <p class="caption">
-        <span class="caption-text">{{toc.title}}</span>
+        <span class="caption-text"><a href="{{ pathto(toc.docname) + toc.anchor }}">{{toc.title}}</a></span>
       </p>
       <ul class="{% if toc.current %}current{% endif %}">
         {% for entry in toc.entries %}

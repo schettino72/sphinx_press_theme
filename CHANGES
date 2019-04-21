@@ -13,6 +13,8 @@ Changes
 - add breadcrumbs
 - add page navigation on page top
 - fix #12: load extensions JS files
+- fix #10: don't raise error if there is no toctree
+- no navlinks to toctree if there is only one toctree defined
 
 
 0.2.0 (*2019-03-19*)

@@ -4,6 +4,8 @@ from docutils import nodes
 from sphinx.environment.collectors import EnvironmentCollector
 from sphinx import addnodes
 
+__version__ = (0, 3, 0)
+
 
 class SimpleTocTreeCollector(EnvironmentCollector):
     """A TocTree collector that saves toctrees in a simple dict.

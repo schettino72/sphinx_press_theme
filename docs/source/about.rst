@@ -37,7 +37,7 @@ See details on `Sphinx theming docs <http://www.sphinx-doc.org/en/master/theming
 Status
 ======
 
-**Press** theme is still in **ALFA**, some core Sphinx features
+**Press** theme is still in **BETA**, some core Sphinx features
 still not available.
 
 Contributions are welcome.

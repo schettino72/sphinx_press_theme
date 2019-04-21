@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='sphinx_press_theme',
-    version='0.2.0',
+    version='0.3.0',
     url='https://schettino72.github.io/sphinx_press_site/',
     license='MIT',
     author='Eduardo Naufel Schettino <schetino72>',
@@ -30,7 +30,7 @@ setup(
     classifiers=[
         'Framework :: Sphinx',
         'Framework :: Sphinx :: Theme',
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
         'Environment :: Console',
         'Environment :: Web Environment',

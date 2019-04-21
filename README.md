@@ -8,7 +8,7 @@ It uses [Vue.js](https://vuejs.org/) & [Stylus](http://stylus-lang.com/) managed
 [webpack](https://webpack.js.org/) (through [vue-cli](https://cli.vuejs.org/)).
 
 
-**Press** theme is still in **ALFA**, some core Sphinx features still not available.
+**Press** theme is still in **BETA**, some core Sphinx features still not available.
 Contributions are welcome.
 
 ## Usage

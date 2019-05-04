@@ -15,10 +15,17 @@ class SimpleTocTreeCollector(EnvironmentCollector):
     """
     def enable(self, app):
         super().enable(app)
-        app.env.toc_dict = {}
+        # env is populated from cache, if not cache create/initalize attibute
+        if not hasattr(app.env, 'toc_dict'):
+            app.env.toc_dict = {}
 
     def clear_doc(self, app, env, docname):
         env.toc_dict.pop(docname, None)
+
+    def merge_other(self, app, env, docnames, other):
+        for docname in docnames:
+            env.toc_dict[docname] = other.toc_dict[docname]
+
 
     def process_doc(self, app, doctree):
         docname = app.env.docname # sphinx mutates this, ouch!!!

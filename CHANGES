@@ -3,6 +3,12 @@ Changes
 =======
 
 
+0.4.0 (*unreleased*)
+====================
+
+- fix reading cached toctree data
+
+
 0.3.0 (*2019-04-22*)
 ====================
 

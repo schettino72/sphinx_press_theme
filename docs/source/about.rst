@@ -37,7 +37,6 @@ See details on `Sphinx theming docs <http://www.sphinx-doc.org/en/master/theming
 Status
 ======
 
-**Press** theme is still in **BETA**, some core Sphinx features
-still not available.
+**Press** theme is still in **BETA**.
 
 Contributions are welcome.

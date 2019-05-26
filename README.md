@@ -1,6 +1,6 @@
 A modern responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
 
-See it in action on Press Theme own [website](https://schettino72.github.io/sphinx_press_site/) 
+See it in action on Press Theme own [website](https://schettino72.github.io/sphinx_press_site/)
 
 
 This theme is based on [VuePress](https://vuepress.vuejs.org/).
@@ -8,7 +8,7 @@ It uses [Vue.js](https://vuejs.org/) & [Stylus](http://stylus-lang.com/) managed
 [webpack](https://webpack.js.org/) (through [vue-cli](https://cli.vuejs.org/)).
 
 
-**Press** theme is still in **BETA**, some core Sphinx features still not available.
+**Press** theme is still in **BETA**.
 Contributions are welcome.
 
 ## Usage

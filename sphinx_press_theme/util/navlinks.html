@@ -2,7 +2,7 @@
 {% if toctree_data|length > 1 %}
   {% for tree in toctree_data %}
     <div class="nav-item">
-      <a href="{{ pathto(tree.docname) + tree.anchor }}"
+      <a href="{{ tree.href }}"
          class="nav-link {% if tree.current %} router-link-active{% endif %}">
          {{tree.title}}
       </a>

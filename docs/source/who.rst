@@ -9,3 +9,5 @@ If you this theme please add your site below:
 - `Friendly ML Tutorial <https://aunnnn.github.io/ml-tutorial/html/index.html>`_
 - `Kube Control <https://ktl.leftxs.org/>`_
 - `Butter MAS Python API <https://bennymeg.github.io/Butter.MAS.PythonAPI/>`_
+- `trcls <https://trcls.ningyuan.io>`_
+- `bedshape <https://bedshape.ningyuan.io>`_

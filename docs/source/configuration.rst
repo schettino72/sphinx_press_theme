@@ -40,10 +40,11 @@ See docs on `html_sidebars <http://www.sphinx-doc.org/en/master/usage/configurat
 ``html_css_files``
 ^^^^^^^^^^^^^^^^^^
 
-Adds custom CSS files to the theme:
+Adds custom CSS files to the theme
 
 .. code-block:: python
 
+    # Here we assume that the file is at _static/css/custom.css
     html_css_files = ["css/custom.css"]
 
 ``html_external_links``

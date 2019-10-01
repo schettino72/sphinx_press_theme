@@ -5,15 +5,16 @@
  *
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+ /* FONTS FOR THE CODE - will fall back to monospace if unavailable */
+@import url('https://fontlibrary.org/face/roboto-mono');
+@import url('https://fontlibrary.org/face/inconsolata');
 
 /* MAKES MAIN TEXT SECTION LARGER */
 .content:not(.custom) {
     max-width: 840px;
 }
 
-/* TJE SECTION BELOW DEFINES THE APPEARANCE OF AUTODOC-GENERATED DOCS */
+/* THE SECTION BELOW DEFINES THE APPEARANCE OF AUTODOC-GENERATED DOCS */
 
 .sig-name.descname {
     font-size: 1.2em;
@@ -77,6 +78,7 @@ dl.method, dl.function {
 }
 
 
+/* THE SECTION BELOW CHANGES CODE FONTS FOR BETTER 80-CHARS READABILITY */
 /* Code will be displayed as Roboto, or Inconsolata if screen is small */
 code, pre {
     font-family: 'Roboto Mono', 'Inconsolata', monospace;
@@ -93,6 +95,10 @@ code, pre {
 
 blockquote {
     font-size: inherit;
+}
+
+blockquote h2 {
+    margin-left: 1em;
 }
 
 /* THE SECTION BELOW FIXES A SPHINX-MERMAID OPACITY PROBLEM */

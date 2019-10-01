@@ -11,3 +11,4 @@ If you this theme please add your site below:
 - `Butter MAS Python API <https://bennymeg.github.io/Butter.MAS.PythonAPI/>`_
 - `trcls <https://trcls.ningyuan.io>`_
 - `bedshape <https://bedshape.ningyuan.io>`_
+- `DNA Chisel <https://edinburgh-genome-foundry.github.io/DnaChisel/>`_

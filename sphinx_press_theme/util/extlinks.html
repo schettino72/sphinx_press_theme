@@ -1,9 +1,11 @@
 {# external links, i.e. #}
-{#
-<div class="nav-item">
-  <a href="https://github.com/schettino72/sphinx_press_theme"
-     class="nav-link external">
-       Github <outboundlink/>
-  </a>
-</div>
-#}
+{% if theme_external_links %}
+  {% for (label, url) in theme_external_links %}
+    <div class="nav-item">
+      <a href="{{ url }}"
+        class="nav-link external">
+          {{ label }} <outboundlink/>
+      </a>
+    </div>
+  {% endfor %}
+{% endif %}

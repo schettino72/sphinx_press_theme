@@ -17,10 +17,10 @@ class SimpleTocTreeCollector(EnvironmentCollector):
     Executed once per document/page, at sphinx's "read" phase.
 
     Saved data example:
-    {
-     'sections': [{'title': 'Demo', 'href': '#demo'}],
-     'toctrees': [<toctree: >]
-    }
+    >>> {
+    >>>  'sections': [{'title': 'Demo', 'href': '#demo'}],
+    >>>  'toctrees': [<toctree: >]
+    >>> }
     """
     def enable(self, app):
         super().enable(app)
@@ -65,16 +65,22 @@ class SimpleTocTreeCollector(EnvironmentCollector):
 
 
 def add_toctree_data(app, pagename, templatename, context, doctree):
-    """create toctree_data, used to build sidebar navigation
+    """Create toctree_data, used to build sidebar navigation
 
-    :context dict:
-    :doctree docutils.nodes.document:
+    :param pagename: The name of the page
+    :type pagename: str
+    :param templatename: The name of the templatename
+    :type templatename: str
+    :param context: The context
+    :type context: dict
+    :param doctree: A doctree
+    :type doctree: docutils.nodes.document
 
     Add to `toctree_data` to `context` that will be available on templates.
     Although data is "global", it is called once per page because current
     page is "highlighted", and some part of TOC might be collapsed.
 
-
+    :return: None
     """
     # print(f"---------- Context\n{pagename}\n-------------\n")
 

@@ -37,8 +37,31 @@ See docs on `html_sidebars <http://www.sphinx-doc.org/en/master/usage/configurat
   html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
 
 
+``html_css_files``
+^^^^^^^^^^^^^^^^^^
 
-templates
+Adds custom CSS files to the theme
+
+.. code-block:: python
+
+    # Here we assume that the file is at _static/css/custom.css
+    html_css_files = ["css/custom.css"]
+
+``html_external_links``
+^^^^^^^^^^^^^^^^^^^^^^^
+
+If provided, creates external links (e.g. Github) in the top right corner:
+
+.. code-block:: python
+
+    html_theme_options = {
+      "external_links": [
+          ("Github", "https://github.com/username/repo"),
+          ("Other", "https://bla.com")
+      ]
+    }
+
+Templates
 =========
 
 

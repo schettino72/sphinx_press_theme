@@ -2,6 +2,12 @@
 Changes
 =======
 
+0.5.0 (*2019-10-01*)
+=====================
+
+- new CSS styles to handle Sphinx-specific classes (fixes #26)
+- add support for user-provided CSS stylesheets (fixes #25)
+- allow support for user-defined external links
 
 0.4.0 (*2019-05-27*)
 ====================

@@ -1,3 +1,5 @@
+# sphinx_press_theme
+
 A modern responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
 
 See it in action on Press Theme own [website](https://schettino72.github.io/sphinx_press_site/)

@@ -37,6 +37,15 @@ See docs on `html_sidebars <http://www.sphinx-doc.org/en/master/usage/configurat
   html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
 
 
+html_css_files
+^^^^^^^^^^^^^^
+
+Adds custom CSS files to the theme:
+
+.. code-block:: python
+
+    html_css_files = ["css/custom.css"]
+
 
 templates
 =========

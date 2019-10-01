@@ -10,3 +10,4 @@ Showcase of Sphinx features using **Press** theme.
    admonition
    domain
    extensions
+   

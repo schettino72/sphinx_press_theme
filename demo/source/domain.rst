@@ -1,8 +1,8 @@
-domain
+Domain
 ======
 
 
-python
+Python
 ------
 
 .. py:module:: foo
@@ -12,10 +12,14 @@ python
 
    My spam
 
+autofunction
+------------
 
-autodoc
--------
+.. autofunction:: sphinx_press_theme.add_toctree_data
 
-.. autofunction:: io.open
+autoclass
+---------
 
+.. autoclass:: sphinx.environment.collectors.EnvironmentCollector
+   :members:
 

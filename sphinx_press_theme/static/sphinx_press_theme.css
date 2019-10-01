@@ -6,6 +6,7 @@
  */
 
  /* FONTS FOR THE CODE - will fall back to monospace if unavailable */
+
 @import url('https://fontlibrary.org/face/roboto-mono');
 @import url('https://fontlibrary.org/face/inconsolata');
 
@@ -23,7 +24,7 @@
 }
 
 .sig-param {
-    font-family: 'Roboto Mono';
+    font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
     margin-left: 0.3em;
 }
 
@@ -81,12 +82,12 @@ dl.method, dl.function {
 /* THE SECTION BELOW CHANGES CODE FONTS FOR BETTER 80-CHARS READABILITY */
 /* Code will be displayed as Roboto, or Inconsolata if screen is small */
 code, pre {
-    font-family: 'Roboto Mono', 'Inconsolata', monospace;
+    font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
 }
 
 @media (max-width: 1200px) {
     code, pre {
-        font-family: 'Inconsolata', 'Roboto Mono', monospace;
+        font-family: 'InconsolataRegular', 'Inconsolata', 'RobotoMonoRegular', 'Roboto Mono', monospace;
     }
     pre {
         font-size: 0.95em;

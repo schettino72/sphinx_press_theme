@@ -36,7 +36,19 @@ See docs on `html_sidebars <http://www.sphinx-doc.org/en/master/usage/configurat
 
   html_sidebars = {'**': ['util/searchbox.html', 'util/sidetoc.html']}
 
+``external_links``
+^^^^^^^^^^^^^^^
 
+If provided creates a Github link to the project's repository in the top right corner:
+
+.. code-block:: python
+
+    html_context = {
+        "external_links": [
+          ("Github", "https://github.com/username/repo"),
+          ("Other", "https://github.com/username/repo")
+        ]
+    }
 
 templates
 =========

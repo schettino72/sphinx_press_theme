@@ -43,7 +43,7 @@ how
     the term.
 
 Field lists:
-``````````````````
+````````````
 
 :what: Field lists map field names to field bodies, like
        database records.  They are often part of an extension

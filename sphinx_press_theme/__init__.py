@@ -146,7 +146,7 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
         # `allow_sharp_as_current_path` is True
         baseuri = app.builder.get_target_uri(pagename).rsplit('#', 1)[0]
         toc_uri = app.builder.get_target_uri(toc_docname).rsplit('#', 1)[0]
-        toc_href = f'{relative_uri(baseuri, toc_uri)}#{anchor_id}'
+        toc_href = '{}#{}'.format(relative_uri(baseuri, toc_uri), anchor_id)
         res.append({
             'docname': toc_docname,
             'href': toc_href,

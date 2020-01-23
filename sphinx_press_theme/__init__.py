@@ -116,7 +116,8 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
             if current1:
                 current0 = True
                 # if current, add another level
-                children = app.env.toc_dict[name]['sections']
+                if name in app.env.toc_dict:
+                    children = app.env.toc_dict[name]['sections']
             # add page_toc for current page
             entries.append({
                 'name': name,

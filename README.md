@@ -54,6 +54,8 @@ make clean; make html
 
 To update website:
 
+```
 cd ../press_site
 rsync -rvi ../sphinx_vuepress_theme/docs/build/html/ .
 git add --all
+```

@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: MIT
+# Copyright Eduardo Naufel Schettino and other contributors.
 #
 # Configuration file for the Sphinx documentation builder.
 #

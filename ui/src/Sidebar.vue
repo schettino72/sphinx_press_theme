@@ -1,3 +1,6 @@
+<!-- SPDX-License-Identifier: MIT -->
+<!-- Copyright Eduardo Naufel Schettino and other contributors. -->
+
 <template>
   <div class="sidebar">
     <slot></slot>

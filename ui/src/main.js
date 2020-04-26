@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright Eduardo Naufel Schettino and other contributors.
+
 import Vue from 'vue'
 
 import './vuepress/styles/theme.styl'

@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright Eduardo Naufel Schettino and other contributors.
+
 from os import path
 
 from docutils import nodes

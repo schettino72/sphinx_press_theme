@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright Eduardo Naufel Schettino and other contributors.
+
 # Minimal makefile for Sphinx documentation
 #
 

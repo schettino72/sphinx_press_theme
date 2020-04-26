@@ -1,3 +1,6 @@
+REM SPDX-License-Identifier: MIT
+REM Copyright Eduardo Naufel Schettino and other contributors.
+
 @ECHO OFF
 
 pushd %~dp0

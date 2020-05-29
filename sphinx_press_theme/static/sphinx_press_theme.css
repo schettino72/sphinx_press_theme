@@ -7,8 +7,8 @@
 
  /* FONTS FOR THE CODE - will fall back to monospace if unavailable */
 
-@import url('https://fontlibrary.org/face/roboto-mono');
-@import url('https://fontlibrary.org/face/inconsolata');
+@import url('roboto-mono.css');
+@import url('inconsolata.css');
 
 /* MAKES MAIN TEXT SECTION LARGER */
 .content:not(.custom) {

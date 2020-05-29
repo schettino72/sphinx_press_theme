@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'InconsolataBold';
+        src: url('InconsolataBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'InconsolataMedium';
+        src: url('InconsolataMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'InconsolataRegular';
+        src: url('InconsolataRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+ /* The following rules are deprecated. */
+
+@font-face {
+    font-family: 'Inconsolata';
+        src: url('InconsolataBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Inconsolata';
+        src: url('InconsolataMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Inconsolata';
+        src: url('InconsolataRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+

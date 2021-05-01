@@ -2,6 +2,15 @@
 Changes
 =======
 
+
+0.6.0 (* unreleased *)
+======================
+
+- require Sphinx >= 3.0 (tested on 3.5.4)
+- drop support for python 3.5
+- add support for python 3.8 and 3.9
+
+
 0.5.0 (*2019-10-01*)
 =====================
 

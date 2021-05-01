@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="sphinx_press_theme",
-    version="0.5.1",
+    version="0.6.dev0",
     url="https://schettino72.github.io/sphinx_press_site/",
     license="MIT",
     author="Eduardo Naufel Schettino <schetino72>",
@@ -23,7 +23,7 @@ setup(
         ]
     },
     entry_points={"sphinx.html_themes": ["press = sphinx_press_theme"]},
-    install_requires=["sphinx>=2.0.0"],
+    install_requires=["sphinx>=3.0.0"], # last tested with 3.5.4
     classifiers=[
         "Framework :: Sphinx",
         "Framework :: Sphinx :: Theme",
@@ -33,9 +33,10 @@ setup(
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent",
         "Topic :: Documentation",
         "Topic :: Software Development :: Documentation",

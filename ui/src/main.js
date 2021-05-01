@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-import './vuepress/styles/theme.styl'
+import './vuepress/styles/index.styl'
 import './sphinx-theme.styl'
 import OutboundLink from './OutboundLink.vue'
 import Navbar from './Navbar.vue'

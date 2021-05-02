@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import SidebarButton from './vuepress/SidebarButton.vue'
+import SidebarButton from '../vuepress/components/SidebarButton.vue'
 // import AlgoliaSearchBox from '@AlgoliaSearchBox'
 // import SearchBox from './SearchBox.vue'
 // import NavLinks from './NavLinks.vue'
@@ -49,7 +49,7 @@ export default {
 
 <style lang="stylus">
 
-@import './vuepress/styles/config.styl'
+@import '../vuepress/styles/config.styl'
 
 .navbar
   padding 0.7rem 1.5rem

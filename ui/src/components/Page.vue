@@ -198,8 +198,8 @@ function find (page, items, offset) {
 </script>
 
 <style lang="stylus">
-@import './vuepress/styles/config.styl'
-@require './vuepress/styles/wrapper.styl'
+@import '../vuepress/styles/config.styl'
+@require '../vuepress/styles/wrapper.styl'
 
 .page
   padding-top $navbarHeight

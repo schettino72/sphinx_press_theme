@@ -119,7 +119,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './vuepress/styles/config.styl'
+@import '../vuepress/styles/config.styl'
 
 .nav-links
   display inline-block

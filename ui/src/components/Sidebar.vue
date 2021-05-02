@@ -80,7 +80,7 @@ function resolveOpenGroupIndex (route, items) {
 </script>
 
 <style lang="stylus">
-@import './vuepress/styles/config.styl'
+@import '../vuepress/styles/config.styl'
 
 .sidebar
   ul

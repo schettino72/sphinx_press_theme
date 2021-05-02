@@ -36,7 +36,7 @@ First build web assets:
 
 ```
 cd ui
-npm run build
+yarn build
 ```
 
 Sphinx theme has a soft link to built assets...

@@ -96,7 +96,7 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
         # In this case, just use the referenced toctree directly
         if len(tree['entries']) == 1:
             entry_docname = tree['entries'][0][1]
-            toctrees = app.env.toc_dict[entry_docname]['toctrees']
+            toctrees = list(app.env.toc_dict[entry_docname]['toctrees'])
 
             if toctrees:
                 # FIXME

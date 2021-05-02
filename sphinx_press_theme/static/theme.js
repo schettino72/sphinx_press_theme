@@ -1,1 +1,1 @@
-../../ui/dist/js/app.js
+../../ui/dist/assets/index.js

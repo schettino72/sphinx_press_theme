@@ -1,1 +1,1 @@
-../../ui/dist/js/chunk-vendors.js
+../../ui/dist/assets/vendor.js

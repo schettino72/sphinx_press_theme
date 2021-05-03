@@ -1,5 +1,11 @@
 # sphinx_press_theme
 
+
+[![PyPI](https://img.shields.io/pypi/v/sphinx_press_theme.svg)](https://pypi.python.org/pypi/sphinx_press_theme)
+
+Please help me keep this project alive [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A23ZL4A)
+
+
 A modern responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.
 
 See it in action on Press Theme own [website](https://schettino72.github.io/sphinx_press_site/)

@@ -1,6 +1,7 @@
 {
   "name": "sphinx_press_theme",
   "version": "0.2.0",
+  "license": "CC-BY-4.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

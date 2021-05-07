@@ -1,5 +1,26 @@
 @require './vuepress/styles/config'
 
+
+.content
+  max-width: 840px
+  margin: 0 auto
+
+  pre
+    line-height: 1.4;
+    padding: 1.25rem 1.5rem;
+    margin: .85rem 0;
+    background-color: #282c34;
+    border-radius: 6px;
+    overflow: auto;
+
+  // FIXME: sphinx should provide a citation-reference?
+  .footnote-reference, .label, dt, p
+    margin-top -($navbarHeight)
+    padding-top $navbarHeight
+  & a:focus
+    // remove outline because padding mess it up
+    outline none
+
 /* fix anchor link positioning  for fixed navbar */
 // FIXME this is not enough as it works only for section headers
 $anchorHeight = ($navbarHeight + 0.5rem)
@@ -10,15 +31,6 @@ $anchorHeight = ($navbarHeight + 0.5rem)
   &:hover
     .headerlink
         opacity: 1
-
-.content
-   // FIXME: sphinx should provide a citation-reference?
-  .footnote-reference, .label, dt, p
-    margin-top -($navbarHeight)
-    padding-top $navbarHeight
-  & a:focus
-    // remove outline because padding mess it up
-    outline none
 
 
 /* Use # as symbol for anchor headerlinks */

@@ -9,6 +9,7 @@ Changes
 - require Sphinx >= 3.0 (tested on 3.5.4)
 - drop support for python 3.5
 - add support for python 3.8 and 3.9
+- upgrade UI based on vue3 + vite
 
 
 0.5.0 (*2019-10-01*)

@@ -8,6 +8,7 @@ Changes
 
 - fix search (avoid script tag on body)
 
+
 0.6.0 (*2021-05-08*)
 ====================
 

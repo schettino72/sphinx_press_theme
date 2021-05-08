@@ -19,13 +19,23 @@ It uses [Vue.js](https://vuejs.org/) & [Stylus](http://stylus-lang.com/) managed
 **Press** theme is still in **BETA**.
 Contributions are welcome.
 
-## Usage
+## Install
 
 First install the theme:
 
 ```
 $ pip install sphinx_press_theme
 ```
+
+Sphinx version compatibility
+
+|Sphinx |Press Theme|
+|-----|-------------|
+|2.X  | 0.5.1       |
+|3.X  | 0.6.0       |
+
+
+## Usage
 
 On Sphinx project's ``conf.py``: set the theme name to ``press``.
 
@@ -52,7 +62,7 @@ Install theme locally with `pip install -e .`.
 
 ```
 cd docs
-make clean; make html
+make clean html
 ```
 
 
@@ -60,6 +70,8 @@ make clean; make html
 
 To update website:
 
+```
 cd ../press_site
 rsync -rvi ../sphinx_vuepress_theme/docs/build/html/ .
 git add --all
+```

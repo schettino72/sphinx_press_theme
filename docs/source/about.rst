@@ -1,6 +1,6 @@
-=====
-About
-=====
+===============
+Getting Started
+===============
 
 Sphinx Press is a modern responsive theme for python's
 `Sphinx docs <http://www.sphinx-doc.org>`_.
@@ -13,8 +13,8 @@ It uses `Vue.js <https://vuejs.org/>`_ &
 
 
 
-Usage
-=====
+Install
+=======
 
 
 First install the theme:
@@ -23,6 +23,18 @@ First install the theme:
 
    $ pip install sphinx_press_theme
 
+Sphinx version compatibility:
+
+========  ===========
+Sphinx    Press Theme
+========  ===========
+3.X        0.6.0
+2.X        0.5.1
+========  ===========
+
+
+Usage
+=====
 
 On Sphinx project's ``conf.py``: set the theme name to ``press``.
 

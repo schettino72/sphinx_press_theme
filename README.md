@@ -31,8 +31,8 @@ Sphinx version compatibility
 
 |Sphinx |Press Theme|
 |-----|-------------|
-|2.X  | 0.5.1       |
 |3.X  | 0.6.0       |
+|2.X  | 0.5.1       |
 
 
 ## Usage
@@ -72,6 +72,6 @@ To update website:
 
 ```
 cd ../press_site
-rsync -rvi ../sphinx_vuepress_theme/docs/build/html/ .
+rsync -rvi ../sphinx_press_theme/docs/build/html/ .
 git add --all
 ```

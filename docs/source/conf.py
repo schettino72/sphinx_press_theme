@@ -20,20 +20,20 @@
 # -- Project information -----------------------------------------------------
 
 project = 'sphinx_press_theme'
-copyright = '2018, Eduardo Naufel Schettino'
+copyright = '2018-present, Eduardo Naufel Schettino'
 author = 'Eduardo Naufel Schettino'
 
 # The short X.Y version
-version = ''
+version = '0.6'
 # The full version, including alpha/beta/rc tags
-release = '0.5.1'
+release = '0.6.1'
 
 
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = '2.0'
+needs_sphinx = '3.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -101,6 +101,12 @@ html_static_path = []
 # The default `html_sidebars` of Press theme: ['util/searchbox.html', 'util/sidetoc.html']
 #
 # html_sidebars = {'**': ['util/sidetoc.html']}
+
+html_theme_options = {
+    "external_links": [
+        ("Github", "https://github.com/schettino72/sphinx_press_theme"),
+    ],
+}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------

@@ -4,17 +4,21 @@ Configuration
 
 The Press theme webpage is composed of a fixed header, a sidebar and main content area.
 
-The ``util`` folder contains Jinja2 snippets to be *included*,
-from main templates. Those can be easily replaced by theme users.
+On Sphinx project's ``conf.py``: set the theme name to ``press``.
 
-To change site/page structure you should *extend* pages and give new implementations for Jinja2 **blocks**.
+.. code-block:: python
 
-Jinja2 templates and blocks are organized as follow:
+   html_theme = "press"
 
+
+See details on `Sphinx theming docs <https://www.sphinx-doc.org/en/master/usage/theming.html>`_.
 
 
 Config values
 =============
+
+Basic configuration on ``conf.py``:
+
 
 ``html_logo``
 ^^^^^^^^^^^^^
@@ -61,8 +65,17 @@ If provided, creates external links (e.g. Github) in the top right corner:
       ]
     }
 
+
 Templates
 =========
+
+
+The ``util`` folder contains Jinja2 snippets to be *included*,
+from main templates. Those can be easily replaced by theme users.
+
+To change site/page structure you should *extend* pages and give new implementations for Jinja2 **blocks**.
+
+Jinja2 templates and blocks are organized as follow:
 
 
 ``layout.html``

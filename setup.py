@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="sphinx_press_theme",
-    version="0.6.1",
+    version="0.7.dev0",
     url="https://schettino72.github.io/sphinx_press_site/",
     license="MIT",
     author="Eduardo Naufel Schettino <schetino72>",
@@ -23,7 +23,7 @@ setup(
         ]
     },
     entry_points={"sphinx.html_themes": ["press = sphinx_press_theme"]},
-    install_requires=["sphinx>=3.0.0"], # last tested with 3.5.4
+    install_requires=["sphinx>=4.0.1"], # last tested with 4.0.0 & docutils 0.17
     classifiers=[
         "Framework :: Sphinx",
         "Framework :: Sphinx :: Theme",

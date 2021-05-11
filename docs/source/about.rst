@@ -8,8 +8,7 @@ Sphinx Press is a modern responsive theme for python's
 This theme is based on `VuePress <https://vuepress.vuejs.org/>`_.
 It uses `Vue.js <https://vuejs.org/>`_ &
 `Stylus <http://stylus-lang.com/>`_ managed by
-`webpack <https://webpack.js.org/>`_
-(through `vue-cli <https://cli.vuejs.org/>`_).
+`vite <http://vitejs.dev/>`_.
 
 
 
@@ -28,7 +27,8 @@ Sphinx version compatibility:
 ========  ===========
 Sphinx    Press Theme
 ========  ===========
-3.X        0.6.0
+4.X        0.7.0
+3.X        0.6.1
 2.X        0.5.1
 ========  ===========
 
@@ -43,7 +43,7 @@ On Sphinx project's ``conf.py``: set the theme name to ``press``.
    html_theme = "press"
 
 
-See details on `Sphinx theming docs <http://www.sphinx-doc.org/en/master/theming.html#using-a-theme>`_.
+See details on :doc:`configuration <configuration>`.
 
 
 Status

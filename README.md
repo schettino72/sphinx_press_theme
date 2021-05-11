@@ -13,7 +13,8 @@ See it in action on Press Theme own [website](https://schettino72.github.io/sphi
 
 This theme is based on [VuePress](https://vuepress.vuejs.org/).
 It uses [Vue.js](https://vuejs.org/) & [Stylus](http://stylus-lang.com/) managed by
-[webpack](https://webpack.js.org/) (through [vue-cli](https://cli.vuejs.org/)).
+[vite](http://vitejs.dev/).
+
 
 
 **Press** theme is still in **BETA**.
@@ -31,7 +32,8 @@ Sphinx version compatibility
 
 |Sphinx |Press Theme|
 |-----|-------------|
-|3.X  | 0.6.0       |
+|4.X  | 0.7.0       |
+|3.X  | 0.6.1       |
 |2.X  | 0.5.1       |
 
 
@@ -43,7 +45,7 @@ On Sphinx project's ``conf.py``: set the theme name to ``press``.
 html_theme = "press"
 ```
 
-See details on [Sphinx theming docs](http://www.sphinx-doc.org/en/master/theming.html#using-a-theme).
+See details on [configuration](https://schettino72.github.io/sphinx_press_site/configuration.html).
 
 
 ## Development

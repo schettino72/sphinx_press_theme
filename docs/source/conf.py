@@ -24,16 +24,16 @@ copyright = '2018-present, Eduardo Naufel Schettino'
 author = 'Eduardo Naufel Schettino'
 
 # The short X.Y version
-version = '0.6'
+version = '0.7'
 # The full version, including alpha/beta/rc tags
-release = '0.6.1'
+release = '0.7.0'
 
 
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
-needs_sphinx = '3.0'
+needs_sphinx = '4.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom

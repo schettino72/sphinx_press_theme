@@ -1,6 +1,12 @@
 @require './vuepress/styles/config'
 
 
+// ReST put table cell elements into P
+table
+  p
+    margin: 0
+
+
 .content
   max-width: 840px
   margin: 0 auto
@@ -21,8 +27,7 @@
     background-color: rgba(27,31,35,.05);
     border-radius: 3px;
 
-  // FIXME: sphinx should provide a citation-reference?
-  .footnote-reference, .label, dt, p
+  .footnote-reference, .label, dt, .reference
     margin-top -($navbarHeight)
     padding-top $navbarHeight
   & a:focus
@@ -32,7 +37,7 @@
 /* fix anchor link positioning  for fixed navbar */
 // FIXME this is not enough as it works only for section headers
 $anchorHeight = ($navbarHeight + 0.5rem)
-.content .section
+.content section
   margin-top -($anchorHeight)
   padding-top $anchorHeight
   margin-bottom 0

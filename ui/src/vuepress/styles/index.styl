@@ -40,7 +40,7 @@ body
   height 100vh
   display none
 
-.sidebar
+.vp-sidebar /* originally sidebar but conflicts with sphinx */
   font-size 16px
   background-color #fff
   width $sidebarWidth
@@ -188,12 +188,12 @@ th, td
       margin-top 1.5rem
       padding-top 0
 
-    .sidebar
+    .vp-sidebar
       top 0
 
 @media (min-width: ($MQMobile + 1px))
   .theme-container.no-sidebar
-    .sidebar
+    .vp-sidebar
       display none
 
     .page

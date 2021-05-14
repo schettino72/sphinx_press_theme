@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar">
+  <div class="vp-sidebar"> <!--originally called sidebar but that conflicts with ReST -->
     <slot></slot>
     <!-- <slot name="top"/> -->
     <!-- <ul class="sidebar-links" v-if="items.length"> -->
@@ -82,7 +82,7 @@ function resolveOpenGroupIndex (route, items) {
 <style lang="stylus">
 @import '../vuepress/styles/config.styl'
 
-.sidebar
+.vp-sidebar
   ul
     padding 0
     margin 0
@@ -110,7 +110,7 @@ function resolveOpenGroupIndex (route, items) {
     padding 1.5rem 0
 
 @media (max-width: $MQMobile)
-  .sidebar
+  .vp-sidebar
     .nav-links
       display block
       .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after
@@ -167,10 +167,10 @@ function resolveOpenGroupIndex (route, items) {
 
 /**** SidebarLink.vue  ***/
 /*.sidebar .sidebar-sub-headers*/
-.sidebar .toctree-l1 ul
+.vp-sidebar .toctree-l1 ul
   font-size 0.95em
 
-.sidebar
+.vp-sidebar
   .toctree-l1 a, .toctree-l2 a
     font-weight 400
     display inline-block
@@ -197,6 +197,4 @@ function resolveOpenGroupIndex (route, items) {
 
 
 /**** end: SidebarLink.vue  ***/
-
-
 </style>

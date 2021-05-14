@@ -6,6 +6,7 @@ Changes
 ====================
 
 - require Sphinx 4.0, docutils 0.17
+- remove external fonts
 
 
 0.6.1 (*2021-05-09*)

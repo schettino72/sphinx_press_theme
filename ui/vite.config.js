@@ -19,6 +19,7 @@ export default defineConfig({
     },
   },
   build: {
+    cssCodeSplit: false,
     rollupOptions: {
       output: {
         format: 'iife',
@@ -26,6 +27,6 @@ export default defineConfig({
         chunkFileNames: `assets/[name].js`,
         assetFileNames: `assets/[name].[ext]`
       },
-    }
+    },
   },
 });

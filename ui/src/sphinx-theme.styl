@@ -13,7 +13,6 @@ table
   p
     margin: 0
 
-
 .content
   max-width: 840px
   margin: 0 auto
@@ -178,13 +177,11 @@ ul.breadcrumbs
 
 
 /* THE SECTION BELOW CHANGES CODE FONTS FOR BETTER 80-CHARS READABILITY */
-/* Code will be displayed as Roboto, or Inconsolata if screen is small */
-code, pre
-  font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
+code, pre, kbd, samp, .pre
+  /* list of fonts taken from pydata-theme */
+  font-family: "SFMono-Regular", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
 @media (max-width: 1200px)
-  code, pre
-    font-family: 'InconsolataRegular', 'Inconsolata', 'RobotoMonoRegular', 'Roboto Mono', monospace;
   pre
     font-size: 0.95em
 
@@ -201,7 +198,6 @@ blockquote
   padding: 0 0 3px /* creates a perfect grey rectangle*/
 
 .sig-param
-  font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
   margin-left: 0.3em
 
 .sig-paren

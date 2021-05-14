@@ -8,10 +8,16 @@
  */
 
 
+.page
+  margin-left: 10px
+  margin-right: 10px
+
 // ReST put table cell elements into P
 table
   p
     margin: 0
+
+
 
 .content
   max-width: 840px
@@ -90,7 +96,7 @@ ul.breadcrumbs
   list-style none
   & li
     display inline-block
-
+    margin-right 5px
 
 /* THE SECTION BELOW DEFINES THE APPEARANCE OF TABLE-OF-CONTENTS */
 /* color fixes for table of contents */
@@ -192,6 +198,11 @@ blockquote
 
 
 /* THE SECTION BELOW DEFINES THE APPEARANCE OF AUTODOC-GENERATED DOCS */
+.sig
+  .property
+    color: #4d6a86
+    padding-right: 0.25rem
+
 .sig-name.descname
   font-size: 1.2em
   font-weight: bold

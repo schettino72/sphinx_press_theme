@@ -1,5 +1,12 @@
 @require './vuepress/styles/config'
 
+/*
+ *
+ * Defines default styles specific to Sphinx Press,
+ * on top of VuePress styles
+ *
+ */
+
 
 // ReST put table cell elements into P
 table
@@ -33,6 +40,10 @@ table
   & a:focus
     // remove outline because padding mess it up
     outline none
+
+/* MAKES MAIN TEXT SECTION LARGER */
+.content:not(.custom)
+  max-width: 840px
 
 /* fix anchor link positioning  for fixed navbar */
 // FIXME this is not enough as it works only for section headers
@@ -81,6 +92,17 @@ ul.breadcrumbs
   & li
     display inline-block
 
+
+/* THE SECTION BELOW DEFINES THE APPEARANCE OF TABLE-OF-CONTENTS */
+/* color fixes for table of contents */
+.toc-backref
+  /* TOCS cause all your section titles to go green. Pouah! */
+  color: inherit
+.contents.topic p.topic-title
+  /* Hide all TOC titles */
+  display: none
+.contents.topic
+  margin-bottom: 3em
 
 
 /** index page **/
@@ -154,5 +176,69 @@ ul.breadcrumbs
     a
       color $textColor
 
+
+/* THE SECTION BELOW CHANGES CODE FONTS FOR BETTER 80-CHARS READABILITY */
+/* Code will be displayed as Roboto, or Inconsolata if screen is small */
+code, pre
+  font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
+
+@media (max-width: 1200px)
+  code, pre
+    font-family: 'InconsolataRegular', 'Inconsolata', 'RobotoMonoRegular', 'Roboto Mono', monospace;
+  pre
+    font-size: 0.95em
+
 blockquote
-  margin-left -0.4rem
+  font-size: inherit
+  h2
+    margin-left: 1em
+
+
+/* THE SECTION BELOW DEFINES THE APPEARANCE OF AUTODOC-GENERATED DOCS */
+.sig-name.descname
+  font-size: 1.2em
+  font-weight: bold
+  padding: 0 0 3px /* creates a perfect grey rectangle*/
+
+.sig-param
+  font-family: 'RobotoMonoRegular', 'Roboto Mono', 'Inconsolata', monospace;
+  margin-left: 0.3em
+
+.sig-paren
+  margin-left: 0.3em
+
+dt
+  line-height: 1.5em
+  margin-bottom: 1em
+
+dt.field-odd, dt.field-even, p.rubric
+  font-size: 1.2em
+  font-weight: bold
+  color: #4d6a86
+
+dd
+  margin-inline-start: 10px
+
+dd.field-odd p strong
+  margin-left: 1em
+
+dl.method, dl.function
+  margin-top: 2em
+  margin-bottom: 3em
+
+.viewcode-link
+  margin-left: 1em
+  color: #9ad8bc
+/* end - autodoc */
+
+
+/* MAKES SPHINX SYNTAX figure:: :align:center WORK AGAIN */
+.figure.align-center
+  text-align: center
+
+
+/* THE SECTION BELOW FIXES A SPHINX-MERMAID OPACITY PROBLEM */
+.content .section
+  opacity: 1.0 !important
+.section
+  opacity: 1.0 !important

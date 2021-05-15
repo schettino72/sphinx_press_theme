@@ -9,8 +9,6 @@
     {%- endblock %}
     {# <meta name="description" content="{{ description }}"> #}
     {%- block css %}
-      <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1)}}">
-      <link rel="stylesheet" href="{{ pathto('_static/theme.css', 1)}}">
       {%- for css in css_files %}
         {%- if css|attr("rel") %}
           <link rel="{{ css.rel }}" href="{{ pathto(css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
@@ -22,8 +20,6 @@
 
     {%- block scripts %}
       {# FIXME: use link-preload #}
-      <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
-
       <!-- sphinx script_files -->
       {%- for scriptfile in script_files %}
         {{ js_tag(scriptfile) }}

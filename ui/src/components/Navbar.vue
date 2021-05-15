@@ -78,4 +78,6 @@ export default {
     padding-left 4rem
     .can-hide
       display none
+  .sidebar-button
+    display:block
 </style>

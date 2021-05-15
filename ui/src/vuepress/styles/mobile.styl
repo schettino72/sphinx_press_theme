@@ -4,7 +4,7 @@ $mobileSidebarWidth = $sidebarWidth * 0.82
 
 // narrow desktop / iPad
 @media (max-width: $MQNarrow)
-  .sidebar
+  .vp-sidebar
     font-size 15px
     width $mobileSidebarWidth
   .page
@@ -12,7 +12,7 @@ $mobileSidebarWidth = $sidebarWidth * 0.82
 
 // wide mobile
 @media (max-width: $MQMobile)
-  .sidebar
+  .vp-sidebar
     top 0
     padding-top $navbarHeight
     transform translateX(-100%)
@@ -21,10 +21,10 @@ $mobileSidebarWidth = $sidebarWidth * 0.82
     padding-left 0
   .theme-container
     &.sidebar-open
-      .sidebar
+      .vp-sidebar
         transform translateX(0)
     &.no-navbar
-      .sidebar
+      .vp-sidebar
         padding-top: 0
 
 // narrow mobile

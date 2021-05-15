@@ -39,8 +39,8 @@ table, dd, li
     border-radius: 3px;
 
   .footnote-reference, .label, .reference
-    margin-top -($navbarHeight)
-    padding-top $navbarHeight
+    scroll-margin-top: $navbarHeight
+
   & a:focus
     // remove outline because padding mess it up
     outline none
@@ -49,12 +49,8 @@ table, dd, li
 .content:not(.custom)
   max-width: 840px
 
-/* fix anchor link positioning  for fixed navbar */
-// FIXME this is not enough as it works only for section headers
-$anchorHeight = ($navbarHeight + 0.5rem)
 .content section
-  margin-top -($anchorHeight)
-  padding-top $anchorHeight
+  scroll-margin-top: ($navbarHeight + 0.5rem)
   margin-bottom 0
   &:hover
     .headerlink

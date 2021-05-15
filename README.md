@@ -31,10 +31,10 @@ $ pip install sphinx_press_theme
 Sphinx version compatibility
 
 |Sphinx |Press Theme|
-|-----|-------------|
-|4.X  | 0.7.0       |
-|3.X  | 0.6.1       |
-|2.X  | 0.5.1       |
+|-------|-----------|
+|4.X    | 0.7.1     |
+|3.X    | 0.6.1     |
+|2.X    | 0.5.1     |
 
 
 ## Usage

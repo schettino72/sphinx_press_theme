@@ -32,7 +32,7 @@ Sphinx version compatibility
 
 |Sphinx |Press Theme|
 |-------|-----------|
-|4.X    | 0.7.2     |
+|4.X    | latest    |
 |3.X    | 0.6.1     |
 |2.X    | 0.5.1     |
 
@@ -71,12 +71,10 @@ make clean html
 
 Set version on:
 
-- setup.py
-- sphinx_press_theme/__init__.py
-- sphinx_press_theme/theme.conf
-- README.md
-- docs/source/conf.py
-- docs/source/about.rst
+- `setup.py`
+- `sphinx_press_theme/__init__.py`
+- `sphinx_press_theme/theme.conf`
+- `docs/source/conf.py`
 
 
 ## Website

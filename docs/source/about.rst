@@ -27,7 +27,7 @@ Sphinx version compatibility:
 ========  ===========
 Sphinx    Press Theme
 ========  ===========
-4.X        0.7.2
+4.X        latest
 3.X        0.6.1
 2.X        0.5.1
 ========  ===========

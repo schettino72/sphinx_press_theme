@@ -7,7 +7,7 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app" class="theme-container" :class="pageClasses">
+    <div id="app"><div class="theme-container" :class="pageClasses">
       <navbar @toggle-sidebar="toggleSidebar">
         <router-link to='/' class="home-link">
           <span class="site-name">Foo</span>
@@ -236,7 +236,7 @@
         </div>
       </page>
 
-    </div> <!-- end app -->
+    </div></div> <!-- end app -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

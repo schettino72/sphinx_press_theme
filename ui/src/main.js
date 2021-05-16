@@ -27,4 +27,5 @@ app.component('router-link', {
 })
 
 
+// mount with isHydrate===true
 app.mount('#app', true);

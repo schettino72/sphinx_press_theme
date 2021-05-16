@@ -43,7 +43,8 @@
   </head>
 
   <body>
-    <div id="app" class="theme-container" :class="pageClasses">
+    <div id="app">
+    <div class="theme-container" :class="pageClasses">
     {%- block container %}
       {%- block header %}{%- include "util/navbar.html" %}{% endblock %}
 
@@ -88,7 +89,7 @@
       </page>
 
     {%- endblock container %}
-    </div>
+    </div></div>
     {% block footer_scripts %}
     {% endblock %}
   </body>

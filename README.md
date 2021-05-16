@@ -32,7 +32,7 @@ Sphinx version compatibility
 
 |Sphinx |Press Theme|
 |-------|-----------|
-|4.X    | 0.7.1     |
+|4.X    | 0.7.2     |
 |3.X    | 0.6.1     |
 |2.X    | 0.5.1     |
 
@@ -66,6 +66,17 @@ Install theme locally with `pip install -e .`.
 cd docs
 make clean html
 ```
+
+## Release
+
+Set version on:
+
+- setup.py
+- sphinx_press_theme/__init__.py
+- sphinx_press_theme/theme.conf
+- README.md
+- docs/source/conf.py
+- docs/source/about.rst
 
 
 ## Website

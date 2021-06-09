@@ -1,7 +1,7 @@
 Who is using **Press** Theme
 ============================
 
-If you this theme please add your site below:
+If you use this theme please add your site below:
 
 
 - `doit <https://pydoit.org>`_

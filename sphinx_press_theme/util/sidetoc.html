@@ -6,7 +6,12 @@
       </p>
       <ul class="{% if toc.current %}current{% endif %}">
         {% for entry in toc.entries %}
-          <li class="toctree-l1 {% if entry.current %}current{% endif %}"><a href="{{ pathto(entry.name) }}" class="reference internal {% if entry.current %}current{% endif %}">{{entry.title}}</a>
+          <li class="toctree-l1 {% if entry.current %}current{% endif %}">
+            {% if entry.ext_resource %}
+              <a href="{{ pathto(entry.name, 1) }}" class="reference">{{entry.title}} <outboundlink></outboundlink></a>
+            {% else %}
+              <a href="{{ pathto(entry.name) }}" class="reference internal {% if entry.current %}current{% endif %}">{{entry.title}}</a>
+            {% endif %}
 
             {% if entry.children %}
               <ul>

@@ -24,9 +24,9 @@ copyright = '2018-present, Eduardo Naufel Schettino'
 author = 'Eduardo Naufel Schettino'
 
 # The short X.Y version
-version = '0.7'
+version = '0.8'
 # The full version, including alpha/beta/rc tags
-release = '0.7.3'
+release = '0.8.0'
 
 
 # -- General configuration ---------------------------------------------------

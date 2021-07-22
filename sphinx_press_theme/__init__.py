@@ -5,7 +5,7 @@ from sphinx.environment.collectors import EnvironmentCollector
 from sphinx import addnodes
 from sphinx.util.osutil import relative_uri
 
-__version__ = (0, 7, 3)
+__version__ = (0, 8, 0)
 
 
 class SimpleTocTreeCollector(EnvironmentCollector):
@@ -107,9 +107,14 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
 
         # add toc tree items, expand one more level if toctree is current page
         entries = []
+        # entries contain a pair (title, name|external url)
+        # if name of document is given and not title, title is taken from document
         for title, name in tree['entries']:
             if not title:
                 title = app.env.titles[name].astext()
+
+            # check if entry is an external resource
+            ext_resource = '://' in name
 
             current1 = (pagename == name)
             children = []
@@ -123,6 +128,7 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
                 'title': title,
                 'current': current1,
                 'children': children,
+                'ext_resource': ext_resource,
             })
 
         toc_docname = tree['parent'] # docname where this toc appears

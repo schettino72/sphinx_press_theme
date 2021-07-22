@@ -2,10 +2,11 @@
 Changes
 =======
 
-0.8.0 (*unreleased*)
+0.8.0 (*2021-07-22*)
 ====================
 
 - GH-59 Fix external links on sidetoc
+- GH-60 Include LICENSE and CHANGES in dist package
 
 
 0.7.3 (*2021-05-16*)

@@ -1,0 +1,6 @@
+include AUTHORS
+include CHANGES
+include LICENSE
+graft docs
+prune docs/build
+

@@ -1,9 +1,13 @@
+## LOOKING FOR PROJECT MAINTAINERS
+
+Unfortunately I (the author) do not have time to maintain this project.
+
+If you are interested just ask me and I will provide admin rights on PyPI and commit access to this repo.
+
 # sphinx_press_theme
 
 
 [![PyPI](https://img.shields.io/pypi/v/sphinx_press_theme.svg)](https://pypi.python.org/pypi/sphinx_press_theme)
-
-Please help me keep this project alive [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A23ZL4A)
 
 
 A modern responsive theme for python's [Sphinx](http://www.sphinx-doc.org) documentation generator.

@@ -213,14 +213,14 @@ function find (page, items, offset) {
   .edit-link
     display inline-block
     a
-      color lighten($textColor, 25%)
+      color var(--text-color, $textColor)
       margin-right 0.25rem
   .last-updated
     float right
     font-size 0.9em
     .prefix
       font-weight 500
-      color lighten($textColor, 25%)
+      color var(--text-color, $textColor)
     .time
       font-weight 400
       color #aaa

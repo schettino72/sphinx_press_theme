@@ -109,7 +109,7 @@ export default {
       border-left none
 
 .sidebar-heading
-  color $textColor
+  color var(--text-color)
   transition color .15s ease
   cursor pointer
   font-size 1.1em

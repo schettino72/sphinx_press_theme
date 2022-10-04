@@ -2,6 +2,12 @@
 Changes
 =======
 
+0.8.1 (*2022-10-04*)
+====================
+
+- GH-54 Add dark mode feature from [Mister-Hope's vuepress PR]("https://github.com/vuejs/vuepress/pull/2301")
+
+
 0.8.0 (*2021-07-22*)
 ====================
 

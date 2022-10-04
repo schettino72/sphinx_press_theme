@@ -32,21 +32,18 @@ module.exports = (options, ctx) => {
         type: 'tip',
         defaultTitle: {
           '/': 'TIP',
-          '/zh/': '提示'
         }
       }],
       ['container', {
         type: 'warning',
         defaultTitle: {
           '/': 'WARNING',
-          '/zh/': '注意'
         }
       }],
       ['container', {
         type: 'danger',
         defaultTitle: {
           '/': 'WARNING',
-          '/zh/': '警告'
         }
       }],
       ['container', {

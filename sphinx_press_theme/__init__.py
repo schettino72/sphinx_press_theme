@@ -5,7 +5,7 @@ from sphinx.environment.collectors import EnvironmentCollector
 from sphinx import addnodes
 from sphinx.util.osutil import relative_uri
 
-__version__ = (0, 8, 0)
+__version__ = (0, 8, 1)
 
 
 class SimpleTocTreeCollector(EnvironmentCollector):

@@ -137,12 +137,12 @@ export default {
       padding-bottom 0
       color lighten($textColor, 10%)
     p
-      color lighten($textColor, 25%)
+      color var(--text-color, $textColor)
   .footer
     padding 2.5rem
     border-top 1px solid $borderColor
     text-align center
-    color lighten($textColor, 25%)
+    color var(--text-color, $textColor)
 
 @media (max-width: $MQMobile)
   .home

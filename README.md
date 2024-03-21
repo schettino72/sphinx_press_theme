@@ -36,7 +36,8 @@ Sphinx version compatibility
 
 |Sphinx |Press Theme|
 |-------|-----------|
-|4.X    | latest    |
+|7.X    | latest    |
+|4.X    | 0.8.0     |
 |3.X    | 0.6.1     |
 |2.X    | 0.5.1     |
 

@@ -80,6 +80,7 @@ Set version on:
 - `sphinx_press_theme/__init__.py`
 - `sphinx_press_theme/theme.conf`
 - `docs/source/conf.py`
+- `ui/package.json`
 
 
 ## Website

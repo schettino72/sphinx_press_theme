@@ -34,7 +34,9 @@
       <link rel="canonical" href="{{ pageurl }}" />
     {%- endif %}
     {# TODO: opensearch #}
-    {%- if favicon %}
+    {%- if favicon_url %}
+      <link rel="shortcut icon" href="{{ pathto('/' + favicon_url, 1) }}"/>
+    {%- elif favicon %}
       <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
     {%- endif %}
 

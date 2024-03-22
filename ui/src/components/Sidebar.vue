@@ -174,7 +174,7 @@ function resolveOpenGroupIndex (route, items) {
   .toctree-l1 a, .toctree-l2 a
     font-weight 400
     display inline-block
-    color $textColor
+    color var(--text-color)
     line-height 1.4
     width: 100%
     box-sizing: border-box

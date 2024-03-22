@@ -23,17 +23,19 @@
     <!--   /> -->
     <!--   <SearchBox v-else-if="$site.themeConfig.search !== false"/> -->
     <!-- </div> -->
+  <DarkmodeSwitch/>
   </header>
 </template>
 
 <script>
 import SidebarButton from '../vuepress/components/SidebarButton.vue'
+import DarkmodeSwitch from '../vuepress/global-components/DarkmodeSwitch.vue'
 // import AlgoliaSearchBox from '@AlgoliaSearchBox'
 // import SearchBox from './SearchBox.vue'
 // import NavLinks from './NavLinks.vue'
 
 export default {
-  components: { SidebarButton }, // NavLinks, SearchBox, AlgoliaSearchBox },
+  components: { SidebarButton, DarkmodeSwitch }, // NavLinks, SearchBox, AlgoliaSearchBox },
 
 //   computed: {
 //     algolia () {
@@ -65,7 +67,7 @@ export default {
   .site-name
     font-size 1.3rem
     font-weight 600
-    color $textColor
+    color var(--text-color)
     position relative
   .links
     font-size 0.9rem

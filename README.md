@@ -1,8 +1,8 @@
-## LOOKING FOR PROJECT MAINTAINERS
+<!--- ## LOOKING FOR PROJECT MAINTAINERS
 
 Unfortunately I (the author) do not have time to maintain this project.
 
-If you are interested just ask me and I will provide admin rights on PyPI and commit access to this repo.
+If you are interested just ask me and I will provide admin rights on PyPI and commit access to this repo. --->
 
 # sphinx_press_theme
 

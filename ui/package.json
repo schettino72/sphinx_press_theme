@@ -4,7 +4,7 @@
   "license": "CC-BY-4.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/assets/style.css ../sphinx_press_theme/static/theme.css && cp dist/assets/index.js ../sphinx_press_theme/static/theme.js",
     "serve": "vite preview"
   },
   "devDependencies": {

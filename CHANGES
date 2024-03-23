@@ -2,13 +2,14 @@
 Changes
 =======
 
-1.0.0 (*XXXX-XX-XX*)
+0.9.1 (*2024-03-22*)
 ====================
 
 - GH-54 Add dark mode feature from [Mister-Hope's vuepress PR]("https://github.com/vuejs/vuepress/pull/2301")
+- Fix Sphinx 7 compatibility
 
 
-0.9.0 (*2024-03-XX*)
+0.9.0 (*2024-03-21*)
 ====================
 
 - Add Sphinx 7 compatibility

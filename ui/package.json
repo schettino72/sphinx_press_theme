@@ -10,7 +10,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.4.21",
-    "vite": "^5.2.2"
+    "vite": "^5.2.6"
   },
   "dependencies": {
     "stylus": "^0.63.0",
